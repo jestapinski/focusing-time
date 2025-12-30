@@ -1,5 +1,8 @@
 :root {
   color-scheme: dark;
+  --font-body: "Palatino Linotype", "Book Antiqua", Palatino, "Georgia",
+    "Times New Roman", serif;
+  --font-display: "Georgia", "Times New Roman", serif;
   --bg-1: #1c1512;
   --bg-2: #2a1f1a;
   --accent: #d9643f;
@@ -21,7 +24,7 @@
 }
 
 body {
-  font-family: "Garamond", "Palatino Linotype", "Book Antiqua", serif;
+  font-family: var(--font-body);
   color: var(--ink);
   background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
   min-height: 100vh;
@@ -131,7 +134,7 @@ main {
 }
 
 .timer-display {
-  font-family: "Copperplate", "Palatino Linotype", serif;
+  font-family: var(--font-display);
   font-size: clamp(48px, 9vw, 88px);
   letter-spacing: 0.08em;
 }
@@ -322,11 +325,66 @@ button:hover {
     gap: 16px;
   }
 
+  main {
+    padding: 0 6vw 72px;
+    gap: 36px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(28px, 7vw, 44px);
+  }
+
+  .hero-copy p {
+    font-size: 16px;
+  }
+
   .site-nav {
     flex-wrap: wrap;
   }
 
   .timer-card {
     padding: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    padding: 24px 6vw 8px;
+  }
+
+  main {
+    padding: 0 6vw 64px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .controls button {
+    flex: 1 1 100%;
+  }
+
+  .timer-display {
+    letter-spacing: 0.04em;
+  }
+
+  .panel {
+    padding: 22px;
+  }
+
+  .history-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
   }
 }
