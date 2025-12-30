@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Focusing Time is a beautiful, fast pomodoro timer that helps you customize focus and break sessions, save your preferences, and keep a local history."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://focusingtime.com/" />
+
+    <meta property="og:title" content="Focusing Time — Pomodoro Timer" />
+    <meta
+      property="og:description"
+      content="Customize focus and break blocks, save your preferences, and keep a local session history."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://focusingtime.com/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Focusing Time — Pomodoro Timer" />
+    <meta
+      name="twitter:description"
+      content="Aesthetic, fast, and customizable pomodoro timer with local history."
+    />
+
+    <title>Focusing Time — Pomodoro Timer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Focusing Time",
+        "url": "https://focusingtime.com/",
+        "description": "A fast, customizable pomodoro timer with local history and session continuity.",
+        "inLanguage": "en-US"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo">FT</span>
+        <div>
+          <p class="brand-title">Focusing Time</p>
+          <p class="brand-subtitle">A mindful pomodoro timer</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="timer">
+        <div class="hero-copy">
+          <h1>Shape your focus, one block at a time.</h1>
+          <p>
+            Customize focus and break durations, and keep your progress locally
+            saved so you can pick up right where you left off.
+          </p>
+        </div>
+
+        <div class="timer-card" role="region" aria-live="polite">
+          <div class="mode-indicator" id="modeLabel">Focus</div>
+          <div class="timer-display" id="timeDisplay">25:00</div>
+          <div class="session-meta" id="sessionMeta">Cycle 1</div>
+
+          <div class="controls">
+            <button class="primary" id="toggleBtn">Start</button>
+            <button class="secondary" id="resetBtn">Reset</button>
+            <button class="ghost" id="skipBtn">Skip</button>
+          </div>
+
+          <div class="progress-bar" aria-hidden="true">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="settings">
+        <div class="panel-header">
+          <h2>Customize your rhythm</h2>
+          <p>Adjust durations. Everything is saved locally.</p>
+        </div>
+
+        <form class="settings-grid" id="settingsForm">
+          <label>
+            Focus minutes
+            <input type="number" id="focusInput" min="1" max="180" required />
+          </label>
+          <label>
+            Break minutes
+            <input type="number" id="breakInput" min="1" max="60" required />
+          </label>
+          <div class="settings-actions">
+            <button type="submit" class="primary">Save settings</button>
+            <button type="button" class="ghost" id="clearStorageBtn">
+              Reset all data
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel" id="history">
+        <div class="panel-header">
+          <h2>Recent sessions</h2>
+          <p>Stored in your browser only.</p>
+        </div>
+        <div class="history-list" id="historyList" role="list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed for quiet momentum. No accounts, no tracking.</p>
+    </footer>
+
+    <noscript>
+      <div class="noscript">
+        Please enable JavaScript to use the timer and saved settings.
+      </div>
+    </noscript>
+
+    <script src="app.js"></script>
+  </body>
+</html>
