@@ -220,6 +220,119 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.seo-story {
+  display: grid;
+  gap: 24px;
+}
+
+.story-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.story-grid h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.story-grid p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature-card {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid rgba(47, 36, 31, 0.15);
+}
+
+.feature-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.stat-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 18px;
+}
+
+.stat-card {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: rgba(47, 36, 31, 0.2);
+  border: 1px solid rgba(47, 36, 31, 0.2);
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.feature-list {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.pill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill-grid span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(217, 100, 63, 0.12);
+  border: 1px solid rgba(217, 100, 63, 0.35);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.faq-item {
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid rgba(47, 36, 31, 0.2);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .settings-grid {
   display: grid;
   gap: 18px;
@@ -273,6 +386,11 @@ button:hover {
 .site-footer {
   padding: 0 7vw 48px;
   color: var(--muted);
+}
+
+.site-footer p {
+  max-width: 520px;
+  line-height: 1.6;
 }
 
 .noscript {

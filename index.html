@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Focusing Time is a beautiful, fast pomodoro timer that helps you customize focus and break sessions, save your preferences, and keep a local history."
+      content="Boost productivity and efficiency with Focusing Time, a fast pomodoro timer to plan focus blocks, reduce context switching, and save personalized routines."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://focusingtime.com/" />
 
-    <meta property="og:title" content="Focusing Time — Pomodoro Timer" />
+    <meta
+      name="keywords"
+      content="productivity timer, efficiency, pomodoro timer, focus blocks, deep work, time boxing, study timer"
+    />
+
+    <meta property="og:title" content="Focusing Time — Productivity Pomodoro Timer" />
     <meta
       property="og:description"
-      content="Customize focus and break blocks, save your preferences, and keep a local session history."
+      content="Plan focus blocks, cut context switching, and build an efficient routine with a customizable pomodoro timer."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://focusing-time.com/" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Focusing Time — Pomodoro Timer" />
+    <meta name="twitter:title" content="Focusing Time — Productivity Pomodoro Timer" />
     <meta
       name="twitter:description"
-      content="Aesthetic, fast, and customizable pomodoro timer with local history."
+      content="A fast, efficient pomodoro timer that saves your routine and keeps you in flow."
     />
 
-    <title>Focusing Time — Pomodoro Timer</title>
+    <title>Focusing Time — Productivity Pomodoro Timer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -37,11 +42,65 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Focusing Time",
-        "url": "https://focusing-time.com/",
-        "description": "A fast, customizable pomodoro timer with local history and session continuity.",
-        "inLanguage": "en-US"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Focusing Time",
+            "url": "https://focusing-time.com/",
+            "description": "A fast, customizable pomodoro timer focused on productivity and efficient focus cycles.",
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Focusing Time",
+            "applicationCategory": "ProductivityApplication",
+            "operatingSystem": "Web",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "description": "A minimalist pomodoro timer that helps plan focus blocks, reduce context switching, and save routines locally.",
+            "url": "https://focusing-time.com/"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does Focusing Time boost productivity?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The timer breaks work into focused blocks with intentional recovery, reducing context switching and helping you sustain deep work."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I customize focus and break lengths?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Set your own focus and break minutes and the app remembers your routine locally."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my data stored online?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Your settings and recent sessions are stored locally in your browser."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is this productivity timer for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Anyone who wants more efficient focus blocks, including students, writers, developers, and remote teams."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -62,10 +121,11 @@
     <main>
       <section class="hero" id="timer">
         <div class="hero-copy">
-          <h1>Shape your focus, one block at a time.</h1>
+          <h1>Boost productivity with efficient focus blocks.</h1>
           <p>
-            Customize focus and break durations, and keep your progress locally
-            saved so you can pick up right where you left off.
+            Focusing Time turns your day into intentional, high-output blocks.
+            Customize focus and break durations, save your routine locally, and
+            return to a steady rhythm whenever you need momentum.
           </p>
         </div>
 
@@ -117,9 +177,165 @@
         </div>
         <div class="history-list" id="historyList" role="list"></div>
       </section>
+
+      <section class="panel seo-story" id="productivity">
+        <div class="panel-header">
+          <h2>A productivity story built on efficiency</h2>
+          <p>
+            Great output is not about longer hours. It is about better focus
+            design. Focusing Time helps you defend attention, reduce context
+            switching, and keep energy aligned with your highest-value work.
+          </p>
+        </div>
+        <div class="story-grid">
+          <div>
+            <h3>Focus blocks that protect deep work</h3>
+            <p>
+              Set precise focus intervals so your brain can settle into one
+              problem at a time. You build cognitive momentum, avoid task
+              thrash, and finish with cleaner attention.
+            </p>
+          </div>
+          <div>
+            <h3>Breaks that reset without derailing you</h3>
+            <p>
+              Intentional breaks keep you fresh and prevent fatigue. Short,
+              planned recovery windows make it easier to return to the next
+              block without procrastination.
+            </p>
+          </div>
+          <div>
+            <h3>Local memory for a consistent routine</h3>
+            <p>
+              Your settings and recent sessions stay in your browser, so your
+              efficiency rhythm is ready whenever you are.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="efficiency">
+        <div class="panel-header">
+          <h2>Efficiency playbook for focused work</h2>
+          <p>Use the timer as a lightweight system to organize your day.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Plan</h3>
+            <p>
+              Define the exact task you want to finish in the next focus block.
+              Clarity at the start makes execution faster.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Execute</h3>
+            <p>
+              Start the timer and work with intensity. One block, one goal, zero
+              multitasking.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Recover</h3>
+            <p>
+              Take a short break to reset attention. You return energized for
+              the next block, not drained.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Repeat</h3>
+            <p>
+              Sustain the cycle through the day and track your progress in the
+              local session history.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="proof">
+        <div class="panel-header">
+          <h2>Why focus blocks beat open-ended work</h2>
+          <p>
+            Efficiency grows when you make time visible and guard it with
+            structure.
+          </p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <p class="stat-value">1 task</p>
+            <p class="stat-label">per block to reduce context switching</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value">25-90</p>
+            <p class="stat-label">minutes of focused work, your choice</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value">Short breaks</p>
+            <p class="stat-label">to preserve momentum without burnout</p>
+          </div>
+        </div>
+        <ul class="feature-list">
+          <li>Boost output by concentrating attention into measurable units.</li>
+          <li>Improve follow-through by giving every task a clear start and end.</li>
+          <li>Build a repeatable routine that trains your brain for deep work.</li>
+        </ul>
+      </section>
+
+      <section class="panel" id="use-cases">
+        <div class="panel-header">
+          <h2>Made for real productivity scenarios</h2>
+          <p>Use Focusing Time for anything that benefits from deliberate focus.</p>
+        </div>
+        <div class="pill-grid">
+          <span>Writing sprints</span>
+          <span>Product design</span>
+          <span>Coding deep work</span>
+          <span>Exam prep</span>
+          <span>Client deliverables</span>
+          <span>Admin batching</span>
+          <span>Reading blocks</span>
+          <span>Daily planning</span>
+        </div>
+      </section>
+
+      <section class="panel" id="faq">
+        <div class="panel-header">
+          <h2>FAQ</h2>
+          <p>Quick answers about this productivity timer.</p>
+        </div>
+        <details class="faq-item">
+          <summary>How does this improve efficiency?</summary>
+          <p>
+            You work in focused intervals with clear boundaries, making it
+            easier to avoid multitasking and protect the time needed for deep
+            work.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>What focus length should I start with?</summary>
+          <p>
+            Start with 25 minutes and adjust based on your energy and task
+            complexity. Many people move to 45-60 minute blocks for deep work.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Does the timer keep my progress?</summary>
+          <p>
+            Yes. It stores settings and recent sessions locally in your browser
+            so you can keep a consistent routine.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Is Focusing Time free?</summary>
+          <p>Yes. The timer is free to use in your browser.</p>
+        </details>
+      </section>
     </main>
 
     <footer class="site-footer">
+      <p>
+        Focusing Time is a productivity-first pomodoro timer designed for
+        efficient focus blocks, deep work, and reliable routines.
+      </p>
     </footer>
 
     <noscript>
